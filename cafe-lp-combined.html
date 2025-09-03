@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山のカフェ</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #6B4F4B; /* Dark Brown */
+    --secondary-color: #4A5C43; /* Dark Green */
+    --accent-color: #A47E6A; /* Muted Brown */
+    --text-color: #333333;
+    --bg-color: #F5F5F5; /* Off-white */
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    background-image: url('https://placehold.co/1600x900/8FBC8F/FFFFFF/png?text=Mountain+Cafe');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* General Sections */
+section {
+    text-align: center;
+}
+
+/* Menu Section */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.menu-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Gallery Section */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Access Section */
+.map-placeholder img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer h3 {
+    color: var(--bg-color);
+}
+
+footer a {
+    color: var(--bg-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+    </style>
+</head>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>山の麓の隠れ家カフェ</h1>
+            <p>自家焙煎の特別な一杯と、静かな時間をお過ごしください。</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="concept" class="container">
+            <h2>コンセプト</h2>
+            <p>私たちは、山の澄んだ空気の中で、一杯一杯丁寧にハンドドリップしたコーヒーを提供します。都会の喧騒を忘れ、自然と共に過ごす贅沢な時間をお楽しみください。</p>
+        </section>
+
+        <section id="menu" class="container">
+            <h2>メニュー</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://placehold.co/400x300/6B4F4B/FFFFFF/png?text=Coffee" alt="コーヒー">
+                    <h3>ブレンドコーヒー</h3>
+                    <p>深煎りのオリジナルブレンド</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://placehold.co/400x300/A47E6A/FFFFFF/png?text=Cake" alt="ケーキ">
+                    <h3>チーズケーキ</h3>
+                    <p>濃厚な味わいのベイクドチーズケーキ</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://placehold.co/400x300/4A5C43/FFFFFF/png?text=Sandwich" alt="サンドイッチ">
+                    <h3>BLTサンド</h3>
+                    <p>地元の新鮮野菜を使用</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="container">
+            <h2>ギャラリー</h2>
+            <div class="gallery-grid">
+                <img src="https://placehold.co/600x400/D2B48C/FFFFFF/png?text=Scenery+1" alt="風景1">
+                <img src="https://placehold.co/600x400/8FBC8F/FFFFFF/png?text=Interior+1" alt="店内1">
+                <img src="https://placehold.co/600x400/BDB76B/FFFFFF/png?text=Scenery+2" alt="風景2">
+                <img src="https://placehold.co/600x400/CD853F/FFFFFF/png?text=Interior+2" alt="店内2">
+            </div>
+        </section>
+
+        <section id="access" class="container">
+            <h2>アクセス</h2>
+            <p>住所: 〇〇県〇〇郡〇〇村123-4</p>
+            <p>〇〇駅から徒歩10分</p>
+            <!-- Google Maps Placeholder -->
+            <div class="map-placeholder">
+                <img src="https://placehold.co/800x400/CCCCCC/FFFFFF/png?text=Google+Map" alt="地図">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>店舗情報</h3>
+            <p>住所: 〇〇県〇〇郡〇〇村123-4</p>
+            <p>営業時間: 9:00 - 17:00 (定休日: 水曜日)</p>
+            <p>電話: 012-345-6789</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+</html>
