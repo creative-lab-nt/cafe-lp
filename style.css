@@ -31,7 +31,7 @@ h1, h2, h3 {
 /* Hero Section */
 .hero {
     height: 70vh;
-    background-image: url('https://placehold.co/1600x900/8FBC8F/FFFFFF/png?text=Mountain+Cafe');
+    
     background-size: cover;
     background-position: center;
     display: flex;
